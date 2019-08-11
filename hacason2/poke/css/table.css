@@ -1,0 +1,94 @@
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+  }
+  
+  table tr{
+	border-bottom: solid 1px #eee;
+	cursor: pointer;
+  }
+  
+  table tr:hover{
+	background-color: #d4f0fd;
+  }
+  
+  table th,table td{
+	text-align: center;
+	width: 25%;
+	padding: 15px 0;
+  }
+  
+  table td.icon{
+	background-size: 35px;
+	background-position: left 5px center;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+  }
+
+  table td.icon.bird{
+	background-image: url("../images/cat.png");
+	height: 19px;
+	   width: 20px;
+	}
+	
+	table td.icon.whale{
+	background-image: url("../images/Buddha.png");
+	height: 19px;
+	   width: 20px;
+	}
+	
+	table td.icon.crab{
+	background-image: url("../images/reindeer.png");
+	height: 19px;
+	   width: 20px;
+	}
+
+	.box18{
+		margin:2em 0;
+		position: relative;
+		padding: 0.25em 1em;
+		border: solid 2px #ffcb8a;
+		border-radius: 3px 0 3px 0;
+	}
+	.box18:before,.box18:after
+	{
+		content: '';
+		position: absolute;
+		width:10px;
+		height: 10px;
+		border: solid 2px #ffcb8a;
+		border-radius: 50%;
+	}
+	.box18:after {
+		top:-12px;
+		left:-12px;
+	}
+	.box18:before {
+		bottom:-12px;
+		right:-12px;
+	}
+	.box18 p {
+		margin: 0; 
+		padding: 0;
+	}
+
+	table td.icon.bird2{
+		background-image: url("../images/dancer.png");
+		height: 19px;
+		   width: 20px;
+		}
+		
+		table td.icon.whale2{
+		background-image: url("../images/okame02_2.png");
+		height: 19px;
+		   width: 20px;
+		}
+		
+		table td.icon.crab2{
+		background-image: url("../images/ahegon.png");
+		height: 19px;
+		   width: 20px;
+		}
+	
+		

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>バトル</title>
+<link type="text/css" rel="stylesheet" href="css/out.css" />
+
+<link type="text/css" rel="stylesheet" href="css/style1.css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+
+
+function DataReceive(){
+document.getElementById("visi").style.visibility="hidden";
+document.getElementById("visi2").style.visibility="hidden";
+document.getElementById("visi3").style.visibility="hidden";
+setTimeout("document.getElementById('visi').style.visibility='visible'",6000);
+setTimeout("document.getElementById('visi2').style.visibility='visible'",6000);
+setTimeout("document.getElementById('visi3').style.visibility='visible'",6000);
+}
+window.onload = DataReceive;
+
+
+<!--
+	
+
+$(function(){
+$(".change").click(function(){
+for( i=1; i<5; i++ ){
+
+if( i == 4 ){
+
+j = 1;
+}else{
+j = i + 1;
+}
+if( $( "#cm" + i ).css( "display" ) != "none" ){
+$( "#cm" + i ).hide();
+$( "#cm" + j ).show();
+break;
+}
+}
+});
+});
+
+function DataSend(){
+ 
+ location.href = "game_over.html?" ;
+
+   
+}
+//-->
+;
+</script>
+
+</herd>
+
+
+<body>
+
+
+<div class="boxA">
+<div class="boxA-inner">
+<div class="box1">
+	<div class="site">
+	<h1>モンスターバトル</h1>
+
+	</div>
+</div>
+</div>
+
+
+<div class="box2">
+
+	<button type="button" id="menubtn">
+	<i class="fa fa-bars"></i><span>MENU</span>
+	</button>
+
+	<nav class="menu" id="menu">
+	<ul>
+	<li><a href="../poke/index.html"><font size ="5" color="blue">リタイア<br>　する</font></a></li>
+	<li><a href="http://yoshidapro2016.tumblr.com/"></a></li>
+	<li><a href="https://twitter.com/search?q=yoshida_pro2016&ref_src=twsrc%5Etfw"></a></li>
+	
+	</ul>
+	</nav>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="box3"><center>
+	<div class="top">
+	<img src="image/odorupen.gif" width="300" height="180" alt="" class="topimg">
+	<p class="catch">通信バトル<br>
+敵を連打してゲージを貯めよう</p></center>
+	</div>
+</div>
+
+
+<div class="box4">
+<div class="box4-1">
+<img src="install.gif"  alt="logo">
+
+<div class="textboard">
+
+<div id="cm1" style="display:block;border:1px ;padding:10px 10px 5px 20px;">
+<p class="change">名前：ペンギンの助　飼い主：日立太郎
+<br>HP:39　攻撃力:1　防御力:2　知力:15</br>ゲージがたまったら必殺技を放とう▽<br /></p>
+</div>
+
+
+<div id="cm2" style="display:none;border:1px ;padding:10px 10px 5px 20px;">
+<p class="change">情報：寒いところとダンスが得意。寒さにはめっぽう強い。攻撃力と防御力は紙耐久だが知力にはまだ救いがある。▽<br>　</br></p>
+</div>
+
+
+<div id="cm3" style="display:none;border:1px ;padding:10px 10px 5px 20px;">
+<p class="change">弱点：炎属性　耐性：氷属性▽<br /><br>　</br><br>　</br></p>
+</div>
+
+
+<div id="cm4" style="display:none;border:1px ;padding:10px 10px 5px 20px;">
+<p class="change">END<br>(もう一度押すと最初に戻ります)▽</br><br>　</br></p>
+</div>
+
+</div>
+</div>
+<br>
+<div class="box4-2">
+<div class="textboard">
+<center>
+<p class="test1" id="visi"><a href="battle.html">1．ファイヤー</a></p>
+<p class="test1" id="visi2"><a href="battle.html">2．フリザード</a></p>
+<p class="test1" id="visi3" ><a href="battle.html">3．サンダー</a></p>
+</center>
+</div>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
+

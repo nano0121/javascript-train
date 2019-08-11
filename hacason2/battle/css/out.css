@@ -1,0 +1,43 @@
+﻿.textboard {
+  width: 100%;
+  height: 123px;
+  margin:  auto;
+  font-size: 1.2rem;
+  color: #FFF;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 0 4px #FFF inset;
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+.test1 {
+  width:  92%;
+  margin: 2%;
+  white-space: pre;
+  overflow: hidden;
+
+  -webkit-animation: ozDq 3s steps(70, end) ;
+
+  /* プロパティは順に name, duration, timing-function です */
+  }
+
+
+.test1:after {
+  content: '▶';
+  -webkit-animation: ozPulse 1s infinite ease;
+  /* プロパティは順に name, duration, iteration-count, timing-function です */
+}
+
+@-webkit-keyframes ozDq { from { width: 0; } } /* 開始地点の指定 */
+@-moz-keyframes ozDq { from { width: 0 } }
+@-webkit-keyframes ozPulse { { /* 透明度の指定 */
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+@-moz-keyframes ozPulse {
+from { opacity: 1; }
+to { opacity: 0; }
+}
